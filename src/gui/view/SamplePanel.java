@@ -18,8 +18,14 @@ public class SamplePanel extends JPanel
 		
 		this.appController = appController;
 		
+		
+		
 		this.textLabel = new JLabel("This is a color app!");
 		this.colorButton = new JButton("Click here to change color");
+		colorButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		
 		setupPanel();
 		setupLayout();
